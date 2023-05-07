@@ -1,0 +1,14 @@
+<img [src]="pokedex.img" width="500px" class="shadow-lg rounded"><br><br>
+<div class="card-body">
+    <h5 class="card-title">{{pokedex.name | titlecase}} - {{pokedex.id}}</h5>
+    <p class="card-text">
+        <b>Peso: </b>{{pokedex.height}}<br>
+        <b>Altura: </b>{{pokedex.weight}}<br>
+    </p>
+    <button class="btn btn-danger" (click)="pokemonAnterior()">
+        Anterior
+    </button>
+    <button class="btn btn-success" (click)="pokemonProximo()">
+        Próximo
+    </button>
+</div>
